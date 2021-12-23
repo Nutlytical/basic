@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+   <nav>
+    <div class="logo">
+        <img src="download.png" alt="">
+    </div>
+    <ul>
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">เกี่ยวกับ</a></li>
+        <li><a href="#">ติดต่อเรา</a></li>
+    </ul>
+   </nav>
+   <header>
+       <button class="toggle" id="toggle">
+           <i class="fa fa-bars fa-2x"></i>
+       </button>
+       <h1>Nattanun.com</h1>
+       <p>learn how to create game and program</p>
+       <button class="create-account" id="open">สร้างบัญชีผู้ใช้</button>
+   </header>
+   <div class="container">
+       <h2>Web Development</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, molestiae!</p>
+       <h2>Game Development</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, molestiae!</p>
+   </div>
+   <div class="modal-container" id="modal">
+       <div class="modal">
+           <button class="close-btn" id="close">
+               <i class="fa fa-times"></i>
+           </button>
+           <div class="modal-header">
+               <h3>สร้างบัญชีผู้ใช้</h3>
+           </div>
+           <div class="modal-content">
+               <p>แบบฟอร์มสร้างบัญชี</p>
+               <form class="modal-form">
+                    <div>
+                       <label for="">ชื่อผู้ใช้</label>
+                       <input type="text" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">อีเมลล์</label>
+                        <input type="email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="">รหัสผ่าน</label>
+                        <input type="password" class="form-input">
+                    </div>
+                    <input type="submit" value="บันทึก" class="submit-btn">
+               </form>
+           </div>
+       </div>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>

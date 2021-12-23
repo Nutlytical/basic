@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.js"></script>  
+    <script src="js/bootstrap.bundle.js"></script> <!-- tooltips ต้องใส่ script นี้ด้วย -->
+</head>
+<body>
+    <div class="container my-4">
+          <!-- JavaScript Widget -->
+          <!-- Tooltip -->
+          <!-- บน -->
+        <button 
+             class="btn btn-primary"
+             data-bs-toggle="tooltip"
+             data-bs-placement="bottom"
+             title="13:00 - 19:00"
+        >เวลาทำการเพจ</button>
+        <hr>
+        <!-- ซ้าย -->
+        <button 
+             class="btn btn-primary"
+             data-bs-toggle="tooltip"
+             data-bs-placement="left"
+             title="13:00 - 19:00"
+        >เวลาทำการเพจ</button>
+        <hr>
+        <!-- ขวา -->
+        <button 
+             class="btn btn-primary"
+             data-bs-toggle="tooltip"
+             data-bs-placement="right"
+             title="13:00 - 19:00"
+        >เวลาทำการเพจ</button>
+        <hr>
+        <!-- ล่าง -->
+        <button 
+             class="btn btn-primary"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="13:00 - 19:00"
+        >เวลาทำการเพจ</button>
+        <hr>
+        <!-- ใส่ tag -->
+        <button 
+             class="btn btn-primary"
+             data-bs-toggle="tooltip"
+             data-bs-placement="top"
+             title="<h4>13:00 - 19:00</h4>"
+             data-bs-html="true"
+        >เวลาทำการเพจ</button>
+        <hr>
+        <!-- PopOvers -->
+        <button class="btn btn-danger"
+             data-bs-toggle="popover"
+             title="ที่อยู่ของฉัน"
+             data-bs-content="บ้านโปรแกรมเมอร์ อำเภอเมือง จังหวัดระยอง 55555"
+        >คลิกเพื่อดูรายละเอียดที่อยู่</button>
+     </div>
+    <!-- tooltips ต้องใส่ script นี้ด้วย -->
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+        });
+    </script>
+    <!-- popover ต้องใส่ script นี้ด้วย -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+        });
+    </script>
+</body>
+</html>

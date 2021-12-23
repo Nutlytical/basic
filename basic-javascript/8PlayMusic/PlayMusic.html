@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="PlayMusic.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <h1>โปรแกรมเล่นเพลง (Music API)</h1>
+    <div class="music_container" id="music_container">
+        <div class="music_info">
+            <h4 class="title" id="title">Let her go</h4>
+            <div class="progress_container" id="progress_container">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+        <audio src="" id="audio" controls hidden></audio>
+        <div class="img_container">
+            <img src="" alt="" id="cover">
+        </div>
+        <div class="navigation">
+            <button id="prev" class="action_btn">
+                <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action_btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action_btn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+    </div>
+    <script src="PlayMusic.js"></script>
+</body>
+</html>

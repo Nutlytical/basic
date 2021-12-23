@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark - Light Mode | Workshop</title>
+    <link rel="stylesheet" href="LightDarkMode.css">
+    <!-- Web Google Fonts -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="theme-switch-container">
+        <span id="toggle-icon">
+            <span class="toggle-text">โหมดกลางวัน</span>
+            <i class="fas fa-sun fa-moon"></i>    <!-- Web Font Awesome -->
+        </span>
+        <label class="theme-switch">
+            <input type="checkbox">
+            <div class="slider round"></div>
+        </label>
+    </div>
+    <nav id="nav">
+        <a href="#home">หน้าแรก</a>
+        <a href="#project">โปรเจค</a>
+        <a href="#contact">ช่องทางการติดต่อ</a>
+    </nav>
+    <section id="home">
+        <div class="title-group">
+            <h1>Nattanun Official</h1>
+            <h2>เขียนโปรแกรม สร้างเกม พัฒนาเว็บไซต์</h2>
+        </div>
+    </section>
+    <section id="project">
+        <h1>ผลงานด้านต่างๆ</h1>
+        <div class="project-container">
+            <div class="image-container">
+                <h2>เขียนโปรแกรม</h2>
+                <img src="img/writing-light.svg" alt="" id="image1">    <!-- Web undraw illustrations -->
+            </div>
+            <div class="image-container">
+                <h2>สร้างเกม</h2>
+                <img src="img/playgame-light.svg" alt="" id="image2">   <!-- Web undraw illustrations -->
+            </div>
+            <div class="image-container">
+                <h2>พัฒนาเว็บไซต์</h2>
+                <img src="img/program-light.svg" alt="" id="image3">    <!-- Web undraw illustrations -->
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-line"></i>
+            <i class="fab fa-instagram"></i>
+        </div>
+    </section>
+    <script src="LightDarkMode.js"></script>
+</body>
+</html>

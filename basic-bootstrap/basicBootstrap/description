@@ -1,0 +1,152 @@
+///// Container /////
+ Container เว้นซ้าย ขวา
+ Container-Fluid เต็มหน้าจอ
+ Container-{Breakpoint} กำหนดขนาดตามอุปกรณ์
+    X-Small <576px
+    Small >=576px
+    Medium >=768px
+    Large >=992px
+    Extra large >=1200px
+    Extra extra large >=1400px
+
+///// จัดการข้อความและตัวอักษร /////
+ กำหนดขนาดข้อความ
+    h-1 ถึง h-6
+    display-1 ถึง display-6
+    fs-1 ถึง fs-6
+ กำหนดความหนาข้อความ
+    fw-bold หนา
+    fw-bolder หนากว่า
+    fw-normal ปกติ
+    fw-light บาง
+    fw-lighter บางกว่า
+    fst-italic เอียง
+ กำหนดรูปแบบข้อความ
+    text-uppercase ตัวพิมพ์ใหญ่
+    text-lowercase ตัวพิมพ์เล็ก
+    text-capitalize ตัวอักษรแรกเป็นพิมพ์ใหญ่
+ จัดการรายการ
+    list-unstyled ไม่กำหนดรูปแบบ
+    list-inline เรียงในแนวนอน
+        list-inline-item ในตัวลูก
+ lead ทำตัวหนาหัวข้อย่อหน้า ทิ้งระยะห่างด้านบนด้านล่างย่อหน้า
+ blockquote ทำบล็อคส่วนหนึ่งของข้อความ
+
+///// สีและพื้นหลัง /////
+ สี
+    primary สีน้ำเงิน
+    secondary เทา
+    success เขียว
+    danger แดง
+    warning เหลือง
+    info ฟ้า
+    light ขาว
+    dark ดำ
+ สีข้อความ text-สี เช่น text-primary
+ สีพื้นหลัง bg-สี เช่น bg-primary
+    bg-transparent สีโปร่ง
+ สีลิ้งค์
+    text-body สีดำ
+    text-muted สีเทา
+
+///// Alignment, Display /////
+ กำหนดตำแหน่งข้อความ Alignment
+    text-start ซ้าย
+    text-center กลาง
+    text-end ขวา
+ Display inline, block, inline-block
+    none ไม่มีการแสดงผล
+    d-block ขึ้นบรรทัดใหม่ พื้นที่แถวเดียว
+    d-inline อักษรติดกันไม่มีการขึ้นบรรทัดใหม่ พื้นที่เป็นประโยค
+    d-inline-block ขึ้นบรรทัดใหม่ พื้นที่ด้านในขยาย+เป็นประโยค
+
+///// Float(ลอย), Fixed(คงที่), Invisible(ซ่อน) /////
+ Float การลอย /พอลอยแล้วตัวอื่นจะมาแทรก
+    float-start ลอยด้านซ้าย
+    float-end ลอยด้านขวา
+    float-none ไม่ลอย
+    clearfix ไม่ให้ตัวอื่นมาแทรก
+ Fixed คงที่หน้าเว็บเมื่อเลื่อน scrollbar
+    fixed-top ติดขอบบน
+    fixed-bottom ติดขอบล่าง
+    sticky-top เมื่อเลื่อนมาถึงแล้วจะติดขอบบน
+ ซ่อนเนื้อหา
+    visible แสดงเนื้อหา
+    invisible ซ่อนเนื้อหา
+
+///// Margin, Padding //////
+ Margin,Padding + ตำแหน่ง + ขนาด 
+ ตำแหน่ง
+    t top
+    b buttom
+    s left
+    e right
+    x left+right
+    y top+bottom
+    blank(ไม่ใส่อะไรเลย) 4ทิศทาง เช่น m-auto p-5
+ ขนาด
+    0 ถึง 5
+    auto
+ Margin ช่องว่างด้านนอก เช่น my-5 
+ Padding ช่องว่างด้านใน เช่น ps-4
+
+///// กำหนดความกว้างและความสูง //////
+ Width, Height + percent
+ w ความกว้าง เช่น w-50
+ h ความสูง เช่น h-25
+
+///// กำหนดเส้นขอบ /////
+ สี
+    border-สี เช่น border-primary
+ ทิศทาง
+    border เส้นขอบ 4 ทิศทาง
+    border-top บน
+    border-bottom ล่าง
+    border-start ซ้าย
+    border-end ขวา
+ ความหนา
+    border-1 ถึง border-5
+ ความโค้ง
+    rounded
+    rounded-top
+    rounded-bottom
+    rounded-start
+    rounded-end
+ ขนาดความโค้ง
+    rounded-0 ถึง rounded-3
+
+///// ปุ่ม(button) /////
+ ต้องประกาศให้เป็นของปุ่ม bootstrap ก่อนด้วย btn
+ กำหนดสีทั้งปุ่ม <button>, <input>
+    btn-สี เช่น btn btn-primary
+ กำหนดสีแค่ตัวอักษร
+    btn-outline-สี
+ ปุ่มแบบ link
+    btn-link
+ ขนาดของปุ่ม
+    btn-lg ใหญ่ large
+    btn-sm เล็ก small
+ ปุ่มแบบเต็มบรรทัด block
+    d-grid gap-2
+ ปุ่มติดกันแนวนอน
+    btn-group
+ ปุ่มติดกันแนวตั้ง
+    btn-group-vertical
+ ปุ่มแบบตัวเลือก dropdown
+    <div>
+        <button class='btn dropdown-toggle' data-bs-toggle='dropdown'>Menu</button>
+        <div class='dropdown-menu'>
+            <a href='#' class='dropdown-item'>item 1</a>
+            <a href='#' class='dropdown-item'>item 2</a>
+            <a href='#' class='dropdown-item'>item 3</a>
+        </div>
+    </div>
+ button style
+    active กดค้าง
+    disabled กดไม่ได้
+
+ื///// nav bar /////
+
+///// list /////
+
+///// BreadCrumb-Badge /////
