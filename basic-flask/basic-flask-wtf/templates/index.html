@@ -1,0 +1,27 @@
+{% extends "layout.html" %} {% block content %}
+<div>
+  {% for message in get_flashed_messages() %}
+  <h1 class="alert alert-success">{{message}}</h1>
+  {% endfor %}
+</div>
+<form action="" method="POST">
+  {{form.hidden_tag()}} {{form.name.label}} {{form.name()}}
+  <br />
+  {{form.gender.label}} {{form.gender()}}
+  <br />
+  {{form.skill.label}} {{form.skill()}}
+  <br />
+  {{form.address.label}} {{form.address()}}
+  <br />
+  {{form.isAccept()}} {{form.isAccept.label}}
+  <br />
+  {{form.submit()}}
+</form>
+<hr />
+{% if session['name'] %}
+<h3>My name is {{session['name']}}</h3>
+<h3>My gender is {{session['gender']}}</h3>
+<h3>My skill is {{session['skill']}}</h3>
+<h3>My Address is {{session['address']}}</h3>
+<h3>Accept Policy: {{session['isAccept']}}</h3>
+{% endif %} {% endblock %}
